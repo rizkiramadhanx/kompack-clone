@@ -1,18 +1,28 @@
 <template>
-  <nav class="shadow-sm d-flex">
+  <nav class="shadow-sm d-flex sticky-top z-100 bg-white">
     <div
       class="container navbar-container d-flex justify-content-between align-items-center"
     >
       <img src="~/assets/image/logo.png" class="logo" alt="logo" />
       <div class="d-lg-flex d-none align-items-center gap-4">
-        <h5 class="nav-item hover-underline-animation">Beranda</h5>
-        <h5 class="nav-item hover-underline-animation">Tentang Kami</h5>
-        <h5 class="nav-item hover-underline-animation">Mitra Gudang</h5>
-        <h5 class="nav-item hover-underline-animation">Syarat Dan Ketentuan</h5>
-        <h5 class="nav-item hover-underline-animation">Kebijakan Privasi</h5>
+        <NuxtLink class="nav-item hover-underline-animation" to="/"
+          >Beranda</NuxtLink
+        >
+        <NuxtLink class="nav-item hover-underline-animation" to="/tentang"
+          >Tentang Kami</NuxtLink
+        >
+        <NuxtLink class="nav-item hover-underline-animation" to="/mitra"
+          >Mitra Gudang</NuxtLink
+        >
+        <NuxtLink class="nav-item hover-underline-animation" to="/syarat"
+          >Syarat Dan Ketentuan</NuxtLink
+        >
+        <NuxtLink class="nav-item hover-underline-animation" to="/kebijakan"
+          >Kebijakan Privasi</NuxtLink
+        >
       </div>
       <HamburgerIcon
-        class="d-lg-none hamburger border"
+        class="d-lg-none hamburger border rounded"
         width="40"
         height="40"
       />
@@ -72,6 +82,9 @@
       </div>
     </div>
   </section>
+  <footer class="footer-bottom text-center">
+    Copyright 2023 kompack.id. All rights reserved.
+  </footer>
 </template>
 
 <script setup>
@@ -83,10 +96,19 @@ import TelephoneIcon from "assets/icons/telephone.vue";
 </script>
 
 <style>
+.footer-bottom {
+  background-color: #4285f4;
+  color: white;
+  padding: 20px 0;
+}
 .hover-underline-animation {
   display: inline-block;
   position: relative;
   color: #4285f4;
+}
+
+a {
+  text-decoration: none;
 }
 
 .hover-underline-animation::after {
