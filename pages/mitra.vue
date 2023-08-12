@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container mb-5 mt-2">
     <div class="row">
       <div class="col-6 hero_left d-flex flex-column justify-content-center">
         <h1 class="h1 title_hero">
@@ -66,7 +66,9 @@
   <section class="container mt-5">
     <div class="row">
       <div class="col-md-6 d-flex flex-column justify-content-center">
-        <h1>Jadi Mitra Gudang Kompack itu MUDAH!</h1>
+        <h1>
+          Jadi Mitra Gudang Kompack itu <span class="blue-text">MUDAH!</span>
+        </h1>
         <div class="mt-5">
           <template v-for="(data, key) in ListEasy" :key="key">
             <div class="d-flex gap-2">
@@ -240,9 +242,6 @@ const benefitMitra = [
   color: white;
 }
 
-.background_image {
-}
-
 .button_contact {
   width: fit-content;
 }
@@ -254,5 +253,9 @@ const benefitMitra = [
 
 .contact_section section {
   padding: 100px;
+}
+
+.blue-text {
+  color: #4285f4;
 }
 </style>
