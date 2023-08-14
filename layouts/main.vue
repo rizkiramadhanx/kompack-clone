@@ -1,31 +1,51 @@
 <template>
-  <nav class="shadow-sm d-flex sticky-top z-100 bg-white">
-    <div
-      class="container navbar-container d-flex justify-content-between align-items-center"
-    >
-      <img src="~/assets/image/logo.png" class="logo" alt="logo" />
-      <div class="d-lg-flex d-none align-items-center gap-4">
-        <NuxtLink class="nav-item hover-underline-animation" to="/"
-          >Beranda</NuxtLink
-        >
-        <NuxtLink class="nav-item hover-underline-animation" to="/tentang"
-          >Tentang Kami</NuxtLink
-        >
-        <NuxtLink class="nav-item hover-underline-animation" to="/mitra"
-          >Mitra Gudang</NuxtLink
-        >
-        <NuxtLink class="nav-item hover-underline-animation" to="/syarat"
-          >Syarat Dan Ketentuan</NuxtLink
-        >
-        <NuxtLink class="nav-item hover-underline-animation" to="/kebijakan"
-          >Kebijakan Privasi</NuxtLink
-        >
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="~/assets/image/logo.png" class="logo" alt="logo" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto ms-auto justify-content-beetwen">
+          <li class="nav-item">
+            <nuxt-link class="nav-link hover-underline-animation" to="/"
+              >Beranda</nuxt-link
+            >
+          </li>
+          <li class="nav-item">
+            <nuxt-link class="nav-link hover-underline-animation" to="/tentang"
+              >Tentang Kami</nuxt-link
+            >
+          </li>
+          <li class="nav-item">
+            <nuxt-link class="nav-link hover-underline-animation" to="/mitra"
+              >Mitra Gudang</nuxt-link
+            >
+          </li>
+          <li class="nav-item">
+            <nuxt-link class="nav-link hover-underline-animation" to="/syarat"
+              >Syarat dan Ketentuan</nuxt-link
+            >
+          </li>
+          <li class="nav-item">
+            <nuxt-link
+              class="nav-link hover-underline-animation"
+              to="/kebijakan"
+              >Kebijakan Privasi</nuxt-link
+            >
+          </li>
+        </ul>
       </div>
-      <HamburgerIcon
-        class="d-lg-none hamburger border rounded"
-        width="40"
-        height="40"
-      />
     </div>
   </nav>
   <slot />
@@ -95,7 +115,7 @@ import MailIcon from "assets/icons/mail.vue";
 import TelephoneIcon from "assets/icons/telephone.vue";
 </script>
 
-<style>
+<style scoped>
 .footer-bottom {
   background-color: #4285f4;
   color: white;
@@ -104,11 +124,14 @@ import TelephoneIcon from "assets/icons/telephone.vue";
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #4285f4;
 }
 
 a {
   text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #4285f4 !important;
 }
 
 .hover-underline-animation::after {
@@ -135,7 +158,6 @@ a {
   margin-bottom: ;
 }
 .navbar-container {
-  /* max-width: 1200px; */
   width: full;
   height: 64px;
 }

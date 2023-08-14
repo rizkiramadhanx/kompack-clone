@@ -1,7 +1,7 @@
 <template>
   <section class="container mt-5 mb-5 border-bottom">
     <h2 class="text-center title_kebijakan fs-3 border-bottom">
-      Syarat dan Ketentuan
+      Kebijakan Privasi
     </h2>
     <p>
       <b>PT. Kampung Marketerindo Berdaya</b> yang kemudian disebut “Kompack”
@@ -59,7 +59,7 @@ definePageMeta({
 });
 </script>
 
-<style>
+<style scoped>
 .title_kebijakan {
   background-color: #f7f7f7;
 }

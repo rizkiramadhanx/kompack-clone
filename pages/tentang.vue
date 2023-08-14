@@ -23,7 +23,7 @@ definePageMeta({
 });
 </script>
 
-<style>
+<style scoped>
 .text-tentang {
   font-size: 16px;
   line-height: 22px;

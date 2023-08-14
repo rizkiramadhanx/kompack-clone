@@ -160,7 +160,11 @@ const benefitMitra = [
 ];
 </script>
 
-<style>
+<style scoped>
+* {
+  font-family: "Poppins";
+}
+
 @media (min-width: 300px) and (max-width: 767px) {
   .title_hero {
     font-size: 19px;
@@ -187,9 +191,6 @@ const benefitMitra = [
   }
 }
 
-* {
-  font-family: "Poppins";
-}
 @media (min-width: 767px) {
   .title_hero {
     font-size: 42px;

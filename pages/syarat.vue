@@ -109,7 +109,7 @@ const ListKetentuanLainya = [
 ];
 </script>
 
-<style>
+<style scoped>
 .text_syarat {
   font-size: 16px;
   line-height: 22px;
