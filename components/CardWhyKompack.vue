@@ -20,7 +20,7 @@ import CardWhyKompack1 from "../assets/svg/why-kompack-1.vue";
 const hover = ref(true);
 </script>
 
-<style>
+<style scoped>
 @media (min-width: 300px) and (max-width: 767px) {
   .img-card {
     position: absolute;
