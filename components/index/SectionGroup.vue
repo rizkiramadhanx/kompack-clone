@@ -48,31 +48,65 @@
         </div>
       </div>
       <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
+      <div class="row col-10">
+        <div class="d-flex gap-2 justify-content-start mx-2">
+          <button class="btn btn-pengiriman">JNE</button>
+          <button class="btn btn-pengiriman">Sicepat</button>
+          <button class="btn btn-pengiriman">IdExpress</button>
+          <button class="btn btn-pengiriman">SAP</button>
+        </div>
+      </div>
       <div class="row justify-content-center w-100">
-        <div class="col-10 mt-2 p-3 row card-expedition d-lg-none">
+        <div class="mt-2 p-3 row card-expedition d-lg-none">
           <div class="col-12 row justify-content-center gap-1">
-            <div
-              class="col-5 d-flex bg-white p-4 benefit_text border-primary justify-content-center align-items-center"
-            >
-              Benefit
-            </div>
-            <div
-              class="col-5 d-flex benefit_text bg-white justify-content-center align-items-center"
-            >
-              <img
-                src="~/assets/image/jne-logo.png"
-                class="img-pengiriman"
-                alt="Logo JNE"
-              />
+            <div class="row col-12 justify-content-center gap-1">
+              <div
+                class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
+              >
+                Benefit
+              </div>
+              <div
+                class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
+              >
+                <img
+                  src="~/assets/image/jne-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo JNE"
+                />
+              </div>
             </div>
             <div class="row col-12 justify-content-center gap-1">
               <div
-                class="col-5 d-flex justify-content-center content-mobile bg-white align-items-center"
+                class="left-item-benefit col-5 py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
+              >
+                Biaya COD
+              </div>
+              <div
+                class="right-item-benefit col-5 py-2 d-flex bg-white text-center justify-content-center align-items-center"
+              >
+                2.8% (PPN ditanggung Komship)
+              </div>
+            </div>
+            <div class="row col-12 justify-content-center gap-1">
+              <div
+                class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
+              >
+                Biaya Retur
+              </div>
+              <div
+                class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
+              >
+                Gratis se-lndonesia*
+              </div>
+            </div>
+            <div class="row col-12 justify-content-center gap-1">
+              <div
+                class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
               >
                 Diskon Ongkir
               </div>
               <div
-                class="col-5 d-flex text-center justify-content-center align-items-center"
+                class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
                 Reg 30% Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
               </div>
@@ -281,6 +315,10 @@
 
 <script setup>
 import komshipLogo from "assets/svg/komship-logo.vue";
+
+const activeButton = ref(0);
+
+const halo = [{}];
 </script>
 
 <style scoped>
@@ -302,6 +340,14 @@ import komshipLogo from "assets/svg/komship-logo.vue";
   padding: 0;
 }
 
+.right-item-benefit {
+  border-radius: 0 8px 8px 0;
+}
+
+.left-item-benefit {
+  border-radius: 8px 0px 0px 8px;
+}
+
 .card-frugal p {
   border-radius: 0 0 15px 15px;
   min-height: 100px;
@@ -309,6 +355,11 @@ import komshipLogo from "assets/svg/komship-logo.vue";
 
 .card-frugal > div > img {
   height: 200px;
+}
+
+.btn-pengiriman {
+  border-radius: 6px;
+  background-color: white;
 }
 .text-orange {
   color: #f95032;
