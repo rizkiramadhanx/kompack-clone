@@ -4,26 +4,9 @@
   <WhySection />
   <BenefitSection />
   <SectionGroup />
+  <PartnerSection />
   <MapSection />
-  <section class="container">
-    <swiper
-      :slides-per-view="3"
-      :space-between="50"
-      @swiper="console.log('jaja')"
-      :scrollbar="{ draggable: true }"
-      @slideChange="console.log('jaja')"
-      navigation
-    >
-      <swiper-slide>
-        <div class="h-20">halao</div>
-      </swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-    </swiper>
-  </section>
+  <WarehoseSection />
 </template>
 
 <script setup>
@@ -31,15 +14,15 @@ definePageMeta({
   layout: "main",
   title: "My home page",
 });
+
 import HeroSection from "@/components/index/HeroSection.vue";
 import ProblemSection from "@/components/index/ProblemSection.vue";
 import WhySection from "@/components/index/WhySection.vue";
 import SectionGroup from "@/components/index/SectionGroup.vue";
-import { Swiper, SwiperSlide } from "swiper/vue";
 import BenefitSection from "@/components/index/BenefitSection.vue";
 import MapSection from "@/components/index/MapSection.vue";
-
-const dataWhyKompack = [1, 1, 1];
+import WarehoseSection from "@/components/index/WarehoseSection.vue";
+import PartnerSection from "@/components/index/PartnerSection.vue";
 </script>
 
 <style scoped>

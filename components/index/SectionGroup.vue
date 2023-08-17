@@ -49,8 +49,8 @@
       </div>
       <div class="col-10 mt-4">
         <h2 class="title_frugal text-center">Rekomendasi untuk Kamu</h2>
-        <div class="row g-3 justify-content-between">
-          <div class="col-12 col-lg-5 card-frugal pt-4">
+        <div class="row gy-3 justify-content-between">
+          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/jne.png"
@@ -66,7 +66,7 @@
               <span class="text-orange">hemat</span>nya!
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4">
+          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/dompet.png"
@@ -82,7 +82,7 @@
               di Indonesia
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4">
+          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/dompet.png"
@@ -98,7 +98,7 @@
               di Indonesia
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4">
+          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/map.png"
@@ -139,6 +139,7 @@ import komshipLogo from "assets/svg/komship-logo.vue";
 
 .card-frugal {
   border-radius: 27px;
+  padding: 0;
 }
 
 .card-frugal p {
