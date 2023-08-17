@@ -49,7 +49,7 @@
       </div>
       <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
       <div class="row col-10">
-        <div class="d-flex gap-2 justify-content-start mx-2">
+        <div class="d-flex gap-2 justify-content-start mx-2 d-lg-none">
           <button
             class="btn btn-pengiriman"
             :class="activeButton === 0 ? 'active-button' : ''"
@@ -93,9 +93,7 @@
                 class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
                 <img
-                  :src="
-                    require(`@/assets/image/${halo[activeButton].logo}.png`)
-                  "
+                  :src="`~/assets/image/${halo[activeButton].logo}.png`"
                   class="img-pengiriman"
                   alt="Logo JNE"
                 />
@@ -373,10 +371,6 @@ const halo = [
 
 const changeValue = (e) => {
   activeButton.value = e;
-};
-
-const getImageUrl = (e) => {
-  return new URL(`~/assets/image/${e}.png`, import.meta.url);
 };
 </script>
 
