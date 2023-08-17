@@ -49,7 +49,7 @@
       </div>
       <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
       <div class="row col-10">
-        <div class="d-flex gap-2 justify-content-start mx-2 d-lg-none">
+        <div class="mx-2 d-lg-none">
           <button
             class="btn btn-pengiriman"
             :class="activeButton === 0 ? 'active-button' : ''"
@@ -80,7 +80,7 @@
           </button>
         </div>
       </div>
-      <div class="row justify-content-center w-100">
+      <div class="row justify-content-center">
         <div class="mt-2 p-3 row card-expedition d-lg-none">
           <div class="col-12 row justify-content-center gap-1">
             <div class="row col-12 justify-content-center gap-1">
@@ -414,6 +414,7 @@ const changeValue = (e) => {
   border-radius: 6px;
   background-color: white;
   color: #c2c2c2;
+  margin: 2px;
 }
 
 .active-button {
