@@ -16,7 +16,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto ms-auto justify-content-beetwen">
+        <ul class="navbar-nav ms-auto d-flex justify-content-between">
           <li class="nav-item">
             <nuxt-link class="nav-link hover-underline-animation" to="/"
               >Beranda</nuxt-link
