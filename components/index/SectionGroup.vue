@@ -50,10 +50,34 @@
       <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
       <div class="row col-10">
         <div class="d-flex gap-2 justify-content-start mx-2">
-          <button class="btn btn-pengiriman">JNE</button>
-          <button class="btn btn-pengiriman">Sicepat</button>
-          <button class="btn btn-pengiriman">IdExpress</button>
-          <button class="btn btn-pengiriman">SAP</button>
+          <button
+            class="btn btn-pengiriman"
+            :class="activeButton === 0 ? 'active-button' : ''"
+            @click="changeValue(0)"
+          >
+            JNE
+          </button>
+          <button
+            class="btn btn-pengiriman"
+            :class="activeButton === 1 ? 'active-button' : ''"
+            @click="changeValue(1)"
+          >
+            Sicepat
+          </button>
+          <button
+            class="btn btn-pengiriman"
+            :class="activeButton === 2 ? 'active-button' : ''"
+            @click="changeValue(2)"
+          >
+            IdExpress
+          </button>
+          <button
+            class="btn btn-pengiriman"
+            :class="activeButton === 3 ? 'active-button' : ''"
+            @click="changeValue(3)"
+          >
+            SAP
+          </button>
         </div>
       </div>
       <div class="row justify-content-center w-100">
@@ -69,7 +93,9 @@
                 class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
                 <img
-                  src="~/assets/image/jne-logo.png"
+                  :src="
+                    require(`@/assets/image/${halo[activeButton].logo}.png`)
+                  "
                   class="img-pengiriman"
                   alt="Logo JNE"
                 />
@@ -84,7 +110,7 @@
               <div
                 class="right-item-benefit col-5 py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
-                2.8% (PPN ditanggung Komship)
+                {{ halo[activeButton].COD }}
               </div>
             </div>
             <div class="row col-12 justify-content-center gap-1">
@@ -96,7 +122,7 @@
               <div
                 class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
-                Gratis se-lndonesia*
+                {{ halo[activeButton].Retur }}
               </div>
             </div>
             <div class="row col-12 justify-content-center gap-1">
@@ -108,7 +134,7 @@
               <div
                 class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
-                Reg 30% Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
+                {{ halo[activeButton].diskon }}
               </div>
             </div>
           </div>
@@ -318,7 +344,40 @@ import komshipLogo from "assets/svg/komship-logo.vue";
 
 const activeButton = ref(0);
 
-const halo = [{}];
+const halo = [
+  {
+    COD: "Reg 25%",
+    Retur: "2.8% (PPN ditanggung Komship)",
+    diskon: "Gratis se-lndonesia*",
+    logo: "jne-logo",
+  },
+  {
+    COD: "Reg 30% Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)",
+    Retur: "2.8% (PPN ditanggung Komship)",
+    diskon: "Gratis se-lndonesia*",
+    logo: "sicepat-logo",
+  },
+  {
+    COD: "Reg 25% (>1/2 kg) <1/2 Kg bayar 1/2-nya * + diskon 15%",
+    Retur: "2.8% (PPN ditanggung Komship)",
+    diskon: "Gratis se-lndonesia*",
+    logo: "idexpress-logo",
+  },
+  {
+    COD: "Reg 35%",
+    Retur: "2.8% (PPN ditanggung Komship)",
+    diskon: "Gratis se-lndonesia*",
+    logo: "SAP-logo",
+  },
+];
+
+const changeValue = (e) => {
+  activeButton.value = e;
+};
+
+const getImageUrl = (e) => {
+  return new URL(`~/assets/image/${e}.png`, import.meta.url);
+};
 </script>
 
 <style scoped>
@@ -360,6 +419,12 @@ const halo = [{}];
 .btn-pengiriman {
   border-radius: 6px;
   background-color: white;
+  color: #c2c2c2;
+}
+
+.active-button {
+  border: 1px solid #f95032 !important;
+  color: #f95032 !important;
 }
 .text-orange {
   color: #f95032;
