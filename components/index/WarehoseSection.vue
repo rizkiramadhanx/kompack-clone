@@ -1,7 +1,7 @@
 <template>
   <div class="container py-5">
     <swiper
-      :slides-per-view="width > 767 ? 4 : 2"
+      :slides-per-view="width > 992 ? 4 : width > 600 ? 2 : 1"
       :space-between="25"
       :scrollbar="{ draggable: true }"
     >

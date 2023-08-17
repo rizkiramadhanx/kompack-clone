@@ -51,27 +51,70 @@
   <slot />
   <section class="footer">
     <div class="container">
-      <div class="row gy-5 gx-3">
-        <div class="col-md-6">
+      <div class="row gy-5 gx-3 justify-content-between">
+        <div class="col-lg-4">
           <img src="~/assets/image/logo-footer.png" />
-          <div class="d-flex gap-2 mt-4">
-            <LocationIcon class="icon" width="40" height="40" />
-            <div>
-              <div>Head Office Komerce</div>
-              <p>
-                Jln. Sawah Tengah No. 3 Desa Tunjungmuli Kecamatan Karangmoncol
-                Kabupaten Purbalingga (53355)
-              </p>
+          <div class="d-flex flex-column gap-3">
+            <div class="d-flex gap-2 mt-4">
+              <LocationIcon class="icon" />
+              <div>
+                <div>Head Office Komerce</div>
+                <p>
+                  Jln. Sawah Tengah No. 3 Desa Tunjungmuli Kecamatan
+                  Karangmoncol Kabupaten Purbalingga (53355)
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-2">
+              <WaIcon />
+              +62 813-2801-2118
+            </div>
+            <div class="d-flex gap-2">
+              <EmailIcon />
+              contact@komerce.id
             </div>
           </div>
         </div>
-        <div class="col-md-3 d-flex flex-column gap-2">
-          <div class="title-footer-item">Perusahaan</div>
-          <div class="">Tentang Kami</div>
-          <div>Syarat dan Ketentuan</div>
-          <div>Privasi</div>
+        <div class="col-lg-2 d-flex flex-column gap-3">
+          <div class="title-footer-item">Layanan</div>
+          <div>
+            <img
+              class="img-layanan"
+              alt="logo komship"
+              src="~/assets/svg/komship.svg"
+            />
+          </div>
+          <div>
+            <img
+              class="img-layanan"
+              alt="komtim"
+              src="~/assets/svg/komtim.svg"
+            />
+          </div>
+          <div>
+            <img
+              class="img-layanan"
+              alt="kompack"
+              src="~/assets/svg/kompack.svg"
+            />
+          </div>
+          <div>
+            <img
+              class="img-layanan"
+              alt="komclass"
+              src="~/assets/svg/komclass.svg"
+            />
+          </div>
+
+          <div>
+            <img
+              class="img-layanan"
+              alt="boostr"
+              src="~/assets/svg/boostr.svg"
+            />
+          </div>
         </div>
-        <div class="col-md-3 d-flex flex-column gap-2">
+        <div class="col-lg-2 d-flex flex-column gap-2">
           <div class="d-flex flex-column gap-2">
             <div class="title-footer-item">Kontak</div>
             <div>
@@ -83,39 +126,89 @@
               0813-2801-2118
             </div>
           </div>
-          <div class="mt-2">
-            <div class="title-footer-item">Partner Kolaborasi</div>
-            <div class="d-flex gap-2">
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
+        </div>
+        <div class="col-lg-3 d-flex flex-column gap-2">
+          <div class="title-footer-item">Find Out Our Latest News</div>
+          <div class="d-flex gap-3">
+            <img src="~/assets/svg/ig.svg" alt="Instagram" />
+            <img src="~/assets/svg/fb.svg" alt="Facebook" />
+            <img src="~/assets/svg/linkedin.svg" alt="Linkedin" />
+            <img src="~/assets/svg/telegram.svg" alt="Telegram" />
+            <img src="~/assets/svg/youtube.svg" alt="Youtube" />
+          </div>
+          <div class="title-footer-item mt-3">Partner Kolaborasi</div>
+          <div class="d-flex gap-2">
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/idcloud.svg" />
             </div>
-            <div class="d-flex gap-2 mt-2">
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
-              <CloudHouse class="bg-white rounded" />
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/zahir.svg" />
+            </div>
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/kirimemail.svg" />
+            </div>
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/sicepat.svg" />
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/idexpress.svg" />
+            </div>
+            <div
+              class="img-partner d-flex align-items-center justify-content-center rounded"
+            >
+              <img src="~/assets/svg/sap.svg" />
             </div>
           </div>
         </div>
       </div>
+      <div class="d-flex gap-3 mt-5">
+        <div>Syarat dan Ketentuan</div>
+        <div>Kebijakan Privasi</div>
+      </div>
     </div>
   </section>
-  <footer class="footer-bottom text-center">
-    Copyright 2023 kompack.id. All rights reserved.
+  <footer class="footer_bg footer-bottom">
+    <div class="d-flex justify-content-between container">
+      <p>Copyright 2023 kompack.id. All rights reserved.</p>
+      <p>Trademark of PT Kampung Marketerindo Berdaya</p>
+    </div>
   </footer>
 </template>
 
 <script setup>
-import CloudHouse from "../assets/icons/cloudhouse.vue";
 import LocationIcon from "../assets/icons/location.vue";
-import HamburgerIcon from "../assets/icons/hamburger.vue";
 import MailIcon from "assets/icons/mail.vue";
 import TelephoneIcon from "assets/icons/telephone.vue";
+import WaIcon from "assets/svg/wa-footer.vue";
+import EmailIcon from "assets/icons/email.vue";
 </script>
 
 <style scoped>
+.img-layanan {
+  height: 25px;
+}
+
+.img-partner {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+}
+
+.img-partner > img {
+  width: 30px;
+}
 .footer-bottom {
   background-color: #4285f4;
   color: white;
@@ -160,6 +253,10 @@ a {
 .navbar-container {
   width: full;
   height: 64px;
+}
+
+.footer_bg {
+  background-color: #4285f4;
 }
 
 .footer {
