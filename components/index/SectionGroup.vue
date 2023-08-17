@@ -47,8 +47,168 @@
           </div>
         </div>
       </div>
+      <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
+      <div class="row justify-content-center w-100">
+        <div class="col-10 mt-2 p-3 row card-expedition d-lg-none">
+          <div class="col-12 row justify-content-center gap-1">
+            <div
+              class="col-5 d-flex bg-white p-4 benefit_text border-primary justify-content-center align-items-center"
+            >
+              Benefit
+            </div>
+            <div
+              class="col-5 d-flex benefit_text bg-white justify-content-center align-items-center"
+            >
+              <img
+                src="~/assets/image/jne-logo.png"
+                class="img-pengiriman"
+                alt="Logo JNE"
+              />
+            </div>
+            <div class="row col-12 justify-content-center gap-1">
+              <div
+                class="col-5 d-flex justify-content-center content-mobile bg-white align-items-center"
+              >
+                Diskon Ongkir
+              </div>
+              <div
+                class="col-5 d-flex text-center justify-content-center align-items-center"
+              >
+                Reg 30% Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-10 mt-2 p-3 row card-expedition bg_white d-none d-lg-block"
+        >
+          <div class="row col-12">
+            <div
+              class="col-3 d-flex benefit_text justify-content-center align-items-center"
+            >
+              Benefit
+            </div>
+            <div class="col-2">
+              <div class="p-4">
+                <img
+                  src="~/assets/image/jne-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo JNE"
+                />
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-4">
+                <img
+                  src="~/assets/image/sicepat-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo Sicepat"
+                />
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="p-4">
+                <img
+                  src="~/assets/image/idexpress-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo Idexpress"
+                />
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="p-4 d-flex justify-content-center">
+                <img
+                  src="~/assets/image/SAP-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo Sicepat"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row col-12 w-100">
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Biaya COD
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              2.8% (PPN ditanggung Komship)
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              2.8% (PPN ditanggung Komship)
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              2.8% (PPN ditanggung Komship)
+            </div>
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              2.8% (PPN ditanggung Komship)
+            </div>
+          </div>
+          <div class="row col-12 w-100">
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Biaya Retur
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Gratis se-lndonesia*
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Gratis se-lndonesia*
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Gratis se-lndonesia*
+            </div>
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Gratis se-lndonesia*
+            </div>
+          </div>
+          <div class="row col-12 w-100">
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Diskon Ongkir
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Reg 25%
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Reg 30% Cargo mulai dari 2.500/kg + diskon 5% (min. 10Kg)
+            </div>
+            <div
+              class="col-2 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              {{ `Reg 25% (>1/2 kg) <1/2 Kg bayar 1/2-nya * + diskon 15%` }}
+            </div>
+            <div
+              class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
+            >
+              Reg 35%
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="col-10 mt-4">
-        <h2 class="title_frugal text-center">Rekomendasi untuk Kamu</h2>
         <div class="row gy-3 justify-content-between">
           <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
@@ -69,7 +229,7 @@
           <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
             <div class="d-flex justify-content-center">
               <img
-                src="~/assets/image/hemat/dompet.png"
+                src="~/assets/image/hemat/box.png"
                 alt="dompet"
                 class="img-fluid"
               />
@@ -154,6 +314,11 @@ import komshipLogo from "assets/svg/komship-logo.vue";
   color: #f95032;
 }
 
+.card-expedition {
+  border-radius: 24px;
+  font-weight: 500;
+}
+
 @media (min-width: 200px) and (max-width: 767px) {
   .logo_komship {
     max-width: 80px;
@@ -178,12 +343,23 @@ import komshipLogo from "assets/svg/komship-logo.vue";
     font-size: 18px;
     font-weight: 600;
   }
+
+  .bg_white {
+    background-color: white;
+  }
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
   .text_pengiriman_banner {
     font-size: 18px;
     font-weight: 600;
+  }
+
+  .bg_white {
+    background-color: white;
+  }
+  .benefit_text {
+    font-size: 20px !important;
   }
   .text2_pengiriman_banner {
     font-size: 32px;
@@ -213,7 +389,7 @@ import komshipLogo from "assets/svg/komship-logo.vue";
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   .text_pengiriman_banner {
     font-size: 18px;
     font-weight: 600;
@@ -224,8 +400,16 @@ import komshipLogo from "assets/svg/komship-logo.vue";
     color: #4285f4;
   }
 
+  .bg_white {
+    background-color: white;
+  }
+
   .img-pengiriman {
     height: 30px;
+  }
+
+  .benefit_text {
+    font-size: 20px !important;
   }
 
   .card-frugal {

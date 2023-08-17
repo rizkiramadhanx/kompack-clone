@@ -180,7 +180,9 @@
     </div>
   </section>
   <footer class="footer_bg footer-bottom">
-    <div class="d-flex justify-content-between container">
+    <div
+      class="d-flex flex-column flex-md-row justify-content-between container"
+    >
       <p>Copyright 2023 kompack.id. All rights reserved.</p>
       <p>Trademark of PT Kampung Marketerindo Berdaya</p>
     </div>
