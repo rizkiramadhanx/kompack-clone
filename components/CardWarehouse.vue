@@ -74,4 +74,9 @@ import location from "assets/svg/location-gudang.vue";
   border-radius: 20px;
   font-size: 10px;
 }
+
+.item-slider {
+  display: flex;
+  justify-content: center;
+}
 </style>

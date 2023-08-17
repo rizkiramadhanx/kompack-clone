@@ -9,12 +9,14 @@
     >
       <template v-for="data in dataCard">
         <swiper-slide>
-          <CardWarehouse
-            :alamat="data.alamat"
-            :jam="data.jam"
-            :pengiriman="data.pengiriman"
-            :pendingin="true"
-          />
+          <div class="item-slider">
+            <CardWarehouse
+              :alamat="data.alamat"
+              :jam="data.jam"
+              :pengiriman="data.pengiriman"
+              :pendingin="true"
+            />
+          </div>
         </swiper-slide>
       </template>
     </swiper>
@@ -106,4 +108,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.item-slider {
+  display: flex;
+  justify-content: center;
+}
+</style>
