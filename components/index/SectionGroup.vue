@@ -40,7 +40,7 @@
               alt="Logo Idexpress"
             />
             <img
-              src="~/assets/image/sap-logo.png"
+              src="~/assets/image/SAP-logo.png"
               class="img-pengiriman"
               alt="Logo SAP"
             />
