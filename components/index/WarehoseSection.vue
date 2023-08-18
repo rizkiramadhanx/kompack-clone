@@ -1,26 +1,28 @@
 <template>
-  <div class="container py-5">
-    <swiper
-      :centered-slides-bounds="true"
-      :centered-slides="true"
-      :space-between="25"
-      :scrollbar="{ draggable: true }"
-      :breakpoints="swiperOptions.breakpoints"
-    >
-      <template v-for="data in dataCard">
-        <swiper-slide>
-          <div class="item-slider">
-            <CardWarehouse
-              :alamat="data.alamat"
-              :jam="data.jam"
-              :pengiriman="data.pengiriman"
-              :pendingin="true"
-            />
-          </div>
-        </swiper-slide>
-      </template>
-    </swiper>
-  </div>
+  <section class="warehouse_section">
+    <div class="container py-5">
+      <swiper
+        :centered-slides-bounds="true"
+        :centered-slides="true"
+        :space-between="25"
+        :scrollbar="{ draggable: true }"
+        :breakpoints="swiperOptions.breakpoints"
+      >
+        <template v-for="data in dataCard">
+          <swiper-slide>
+            <div class="item-slider">
+              <CardWarehouse
+                :alamat="data.alamat"
+                :jam="data.jam"
+                :pengiriman="data.pengiriman"
+                :pendingin="true"
+              />
+            </div>
+          </swiper-slide>
+        </template>
+      </swiper>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -112,5 +114,9 @@ export default {
 .item-slider {
   display: flex;
   justify-content: center;
+}
+
+.warehouse_section {
+  background-color: #f6f6f9;
 }
 </style>

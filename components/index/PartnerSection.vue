@@ -1,7 +1,6 @@
 <template>
   <div class="container py-5">
     <h2 class="text-center mb-4">Alur Partner Kompack</h2>
-
     <swiper
       :slides-per-view="width > 992 ? 4 : width > 600 ? 2 : 1"
       :space-between="25"
@@ -23,10 +22,6 @@
       ><swiper-slide>
         <div class="item-slider">
           <img src="~/assets/image/alur/alur-4.png" alt="alur 4" />
-        </div> </swiper-slide
-      ><swiper-slide>
-        <div class="item-slider">
-          <img src="~/assets/image/alur/alur-5.png" alt="alur 5" />
         </div> </swiper-slide
       ><swiper-slide>
         <div class="item-slider">

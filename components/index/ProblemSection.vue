@@ -37,6 +37,8 @@
 <style scoped>
 .text-problem-item {
   max-width: 440px;
+  border-bottom: 1px solid #4285f4;
+  padding-bottom: 4px;
 }
 
 .item-problem {

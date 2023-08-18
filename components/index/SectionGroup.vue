@@ -3,9 +3,9 @@
     <div
       class="container py-3 d-flex flex-column justify-content-center align-items-center"
     >
-      <div class="d-flex flex-column">
+      <div class="d-flex flex-column text-frugal">
         <h2 class="text-center">Makin hemat atur pengiriman</h2>
-        <h2>
+        <h2 class="text-center">
           paket orderan dengan
           <komshipLogo class="inline-block logo_komship" />
         </h2>
@@ -451,7 +451,7 @@ const changeValue = (e) => {
 
 @media (min-width: 200px) and (max-width: 767px) {
   .logo_komship {
-    max-width: 80px;
+    max-width: 120px;
   }
   .text_pengiriman_banner {
     font-size: 12px;
@@ -476,6 +476,10 @@ const changeValue = (e) => {
 
   .bg_white {
     background-color: white;
+  }
+
+  .text-frugal {
+    font-size: 16px !important;
   }
 }
 

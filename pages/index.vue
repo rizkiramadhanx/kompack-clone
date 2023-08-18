@@ -7,6 +7,7 @@
   <PartnerSection />
   <MapSection />
   <WarehoseSection />
+  <ContactSetion />
 </template>
 
 <script setup>
@@ -23,6 +24,7 @@ import BenefitSection from "@/components/index/BenefitSection.vue";
 import MapSection from "@/components/index/MapSection.vue";
 import WarehoseSection from "@/components/index/WarehoseSection.vue";
 import PartnerSection from "@/components/index/PartnerSection.vue";
+import ContactSetion from "@/components/index/ContactSetion.vue";
 </script>
 
 <style scoped>
