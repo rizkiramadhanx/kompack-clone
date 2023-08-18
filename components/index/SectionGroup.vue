@@ -7,7 +7,10 @@
         <h2 class="text-center">Makin hemat atur pengiriman</h2>
         <h2 class="text-center">
           paket orderan dengan
-          <komshipLogo class="inline-block logo_komship" />
+          <img
+            src="~/assets/svg/komship-logo.svg"
+            class="inline-block logo_komship"
+          />
         </h2>
       </div>
       <div class="row justify-content-center mt-5">
@@ -26,22 +29,22 @@
           <div class="col-lg-6 d-flex justify-content-center">
             <img
               src="~/assets/image/jne-logo.png"
-              class="img-pengiriman"
+              class="img-pengiriman-content"
               alt="Logo JNE"
             />
             <img
               src="~/assets/image/sicepat-logo.png"
-              class="img-pengiriman"
+              class="img-pengiriman-content"
               alt="Logo Sicepat"
             />
             <img
               src="~/assets/image/idexpress-logo.png"
-              class="img-pengiriman"
+              class="img-pengiriman-content"
               alt="Logo Idexpress"
             />
             <img
               src="~/assets/image/SAP-logo.png"
-              class="img-pengiriman"
+              class="img-pengiriman-content"
               alt="Logo SAP"
             />
           </div>
@@ -357,8 +360,6 @@
 </template>
 
 <script setup>
-import komshipLogo from "assets/svg/komship-logo.vue";
-
 const activeButton = ref(0);
 
 const halo = [
@@ -462,6 +463,9 @@ const changeValue = (e) => {
     font-weight: 600;
     color: #f95335;
   }
+  .img-pengiriman-content {
+    height: 15px;
+  }
   .img-pengiriman {
     height: 25px;
   }
@@ -487,6 +491,10 @@ const changeValue = (e) => {
   .text_pengiriman_banner {
     font-size: 18px;
     font-weight: 600;
+  }
+
+  .img-pengiriman-content {
+    height: 25px;
   }
 
   .bg_white {
@@ -527,6 +535,10 @@ const changeValue = (e) => {
   .text_pengiriman_banner {
     font-size: 18px;
     font-weight: 600;
+  }
+
+  .img-pengiriman-content {
+    height: 25px;
   }
   .text2_pengiriman_banner {
     font-size: 32px;

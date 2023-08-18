@@ -50,4 +50,10 @@
 .item-problem:hover {
   box-shadow: 2px 2px 2px 2px;
 }
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .text-problem-item {
+    font-size: 12px;
+  }
+}
 </style>

@@ -53,7 +53,7 @@ import ContactSetion from "@/components/index/ContactSetion.vue";
 
 /* responsive */
 
-@media (min-width: 200px) and (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {

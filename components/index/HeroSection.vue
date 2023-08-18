@@ -9,7 +9,7 @@
             <span class="jasa-pergudangan">Jasa Pergudangan</span> Terpercaya
             Untuk Bisnis Online Kamu
           </h1>
-          <p>
+          <p class="desc_hero">
             Kompack adalah solusi untuk masalah pergudangan, management, dan
             pengemasan barang
           </p>
@@ -54,5 +54,14 @@ import Hero from "@/assets/svg/hero.vue";
   font-weight: 600;
   border: none;
   background-color: #4285f4;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .title-hero {
+    font-size: 20px;
+  }
+
+  .desc_hero {
+    font-size: 14px;
+  }
 }
 </style>
