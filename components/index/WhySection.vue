@@ -4,7 +4,7 @@
     <div class="my-5 row justify-content-center gap-5 mx-1">
       <div
         :class="hoverCard1 && 'card_hover'"
-        class="position-relative col-lg-3 card mx-2 d-flex justify-content-center align-items-center flex-column p-3"
+        class="position-relative col-lg-3 cursor-pointer card mx-2 d-flex justify-content-center align-items-center flex-column p-3"
         @mouseover="hoverCard1 = true"
         @mouseleave="hoverCard1 = false"
       >
@@ -133,6 +133,8 @@ const hoverCard3 = ref(false);
 
 @media (min-width: 767px) and (max-width: 1200px) {
   .card {
+    cursor: pointer;
+
     border-radius: 30px;
     max-width: 400px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12);
@@ -146,6 +148,7 @@ const hoverCard3 = ref(false);
 
 @media (min-width: 1000px) {
   .card {
+    cursor: pointer;
     border-radius: 30px;
     max-width: 400px;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.12);

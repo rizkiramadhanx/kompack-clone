@@ -4,6 +4,7 @@
   <WhySection />
   <BenefitSection />
   <SectionGroup />
+  <ServiceSection />
   <PartnerSection />
   <MapSection />
   <WarehoseSection />
@@ -25,6 +26,7 @@ import MapSection from "@/components/index/MapSection.vue";
 import WarehoseSection from "@/components/index/WarehoseSection.vue";
 import PartnerSection from "@/components/index/PartnerSection.vue";
 import ContactSetion from "@/components/index/ContactSetion.vue";
+import ServiceSection from "@/components/index/ServiceSection.vue";
 </script>
 
 <style scoped>
