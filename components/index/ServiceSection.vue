@@ -2,7 +2,7 @@
   <section class="service_section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 accordion_section py-5">
+        <div class="col-lg-6 accordion_section py-5 service_section_lg">
           <h1 class="title_service">Layanan Kami</h1>
           <div
             class="accordion accordion-flush mt-3"
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 d-none d-flex-lg justify-content-end">
+        <div class="col-lg-6 d-none d-lg-flex justify-content-end">
           <img
             src="~/assets/image/penyimpanan.png"
             class="img-service img-fluid"
@@ -141,5 +141,23 @@
   display: block;
   width: fit-content;
   padding-bottom: 10px;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+  .service_section {
+    background-color: #edf8ff;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+  .service_section {
+    background-color: #edf8ff;
+  }
+}
+
+@media (min-width: 1000px) {
+  .service_section_lg {
+    background-color: #edf8ff;
+  }
 }
 </style>
