@@ -1,5 +1,6 @@
 <template>
   <section class="service_section">
+    {{ activeAccordion }}
     <div class="container">
       <div class="row">
         <div class="col-lg-6 accordion_section py-5 service_section_lg">
@@ -11,6 +12,7 @@
             <div class="accordion-item row-layanan">
               <h2 class="accordion-header" id="flush-headingOne">
                 <button
+                  @click="setAccordionButton(0)"
                   class="accordion-button collapsed button_service"
                   type="button"
                   data-bs-toggle="collapse"
@@ -36,6 +38,7 @@
             <div class="accordion-item mt-3 row-layanan">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button
+                  @click="setAccordionButton(1)"
                   class="accordion-button collapsed button_service"
                   type="button"
                   data-bs-toggle="collapse"
@@ -63,6 +66,7 @@
                 <button
                   class="accordion-button collapsed button_service"
                   type="button"
+                  @click="setAccordionButton(2)"
                   data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree"
                   aria-expanded="false"
@@ -86,18 +90,39 @@
           </div>
         </div>
         <div class="col-lg-6 d-none d-lg-flex justify-content-end">
-          <img
-            src="~/assets/image/penyimpanan.png"
-            class="img-service img-fluid"
-            alt="penyimpanan"
-          />
+          <div class="d-flex justify-content-end">
+            <img
+              v-if="activeAccordion === 0"
+              src="~/assets/image/penyimpanan.png"
+              class="img-service img-fluid"
+              alt="penyimpanan"
+            />
+            <img
+              v-if="activeAccordion === 1"
+              src="~/assets/image/stock.png"
+              class="img-service img-fluid"
+              alt="stock"
+            />
+            <img
+              v-if="activeAccordion === 2"
+              src="~/assets/image/packing.png"
+              class="img-service img-fluid"
+              alt="packing"
+            />
+          </div>
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const activeAccordion = ref(0);
+
+const setAccordionButton = (e) => {
+  activeAccordion.value = e;
+};
+</script>
 
 <style scoped>
 .background-color {
