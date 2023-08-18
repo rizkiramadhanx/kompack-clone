@@ -93,9 +93,28 @@
                 class="col-5 right-item-benefit py-2 d-flex bg-white text-center justify-content-center align-items-center"
               >
                 <img
-                  :src="`~/assets/image/${halo[activeButton].logo}.png`"
+                  src="~/assets/image/jne-logo.png"
+                  v-if="activeButton === 0"
                   class="img-pengiriman"
                   alt="Logo JNE"
+                />
+                <img
+                  src="~/assets/image/sicepat-logo.png"
+                  v-if="activeButton === 1"
+                  class="img-pengiriman"
+                  alt="Logo Sicepat"
+                />
+                <img
+                  src="~/assets/image/idexpress-logo.png"
+                  class="img-pengiriman"
+                  v-if="activeButton === 2"
+                  alt="Logo Idexpress"
+                />
+                <img
+                  src="~/assets/image/SAP-logo.png"
+                  class="img-pengiriman"
+                  alt="Logo SAP"
+                  v-if="activeButton === 3"
                 />
               </div>
             </div>
