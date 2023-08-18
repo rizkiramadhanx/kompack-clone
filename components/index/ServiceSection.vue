@@ -2,7 +2,7 @@
   <section class="service_section">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 accordion_section">
+        <div class="col-md-6 accordion_section py-5">
           <h1 class="title_service">Layanan Kami</h1>
           <div
             class="accordion accordion-flush mt-3"
@@ -33,7 +33,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item mt-2 row-layanan">
+            <div class="accordion-item mt-3 row-layanan">
               <h2 class="accordion-header" id="flush-headingTwo">
                 <button
                   class="accordion-button collapsed button_service"
@@ -58,7 +58,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item mt-2 row-layanan">
+            <div class="accordion-item mt-3 row-layanan">
               <h2 class="accordion-header" id="flush-headingThree">
                 <button
                   class="accordion-button collapsed button_service"
@@ -85,8 +85,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <img src="~/assets/image/penyimpanan.png" alt="penyimpanan" />
+        <div class="col-md-6 d-none d-flex-lg justify-content-end">
+          <img
+            src="~/assets/image/penyimpanan.png"
+            class="img-service img-fluid"
+            alt="penyimpanan"
+          />
         </div>
       </div>
     </div>
@@ -129,7 +133,9 @@
   z-index: 100;
   border-style: none;
 }
-
+.img-service {
+  width: 90%;
+}
 .title_service {
   border-bottom: 1px solid #4285f4;
   display: block;
