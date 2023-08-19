@@ -1,7 +1,7 @@
 <template>
   <section class="hero-container">
     <div class="mt-5 container">
-      <div class="row gx-5 gy-5">
+      <div class="row gx-5 gy-5" data-aos="fade-up">
         <div
           class="col-md-6 left-hero d-flex flex-column justify-content-center"
         >
@@ -38,11 +38,6 @@ import Hero from "@/assets/svg/hero.vue";
   background-color: #f6f6f9;
 }
 
-.title-hero {
-  font-size: 32px;
-  font-weight: 700;
-}
-
 .jasa-pergudangan {
   color: #4285f4;
   display: block;
@@ -58,6 +53,17 @@ import Hero from "@/assets/svg/hero.vue";
 @media (min-width: 0px) and (max-width: 767px) {
   .title-hero {
     font-size: 20px;
+  }
+
+  .desc_hero {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .title-hero {
+    font-size: 32px;
+    font-weight: 700;
   }
 
   .desc_hero {

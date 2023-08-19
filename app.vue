@@ -8,6 +8,7 @@
 
 <script setup>
 import AOS from "aos";
+import Vue from "vue";
 
 onMounted(() => AOS.init());
 </script>

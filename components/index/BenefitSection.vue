@@ -61,15 +61,23 @@
       </div>
     </div>
     <div>
-      <div class="text-white">
+      <div class="text-white d-none d-lg-block">
         <div
-          class="banner_usekompack py-3 px-2 top-100 start-50 row"
-          :class="
-            width > 767
-              ? 'translate-middle position-absolute px-2 top-100 start-50'
-              : ''
-          "
+          class="banner_usekompack py-3 px-2 top-100 start-50 row translate-middle position-absolute px-2 top-100 start-50"
         >
+          <h1 class="col-md-6 left_usekompack">
+            Pakai Kompack Lebih Hemat dan Terjangkau
+          </h1>
+          <div class="col-md-6 d-flex align-items-center right_usekompack">
+            <p>
+              Nikmati layanan Kompack dengan biaya mulai dari
+              <b> Rp3.000/ barang yang terjual</b>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-white d-lg-none">
+        <div class="banner_usekompack row py-3 px-2">
           <h1 class="col-md-6 left_usekompack">
             Pakai Kompack Lebih Hemat dan Terjangkau
           </h1>
