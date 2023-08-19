@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^10.3.0",
+    "aos": "^2.3.4",
     "bootstrap-vue": "^2.23.1",
     "swiper": "^10.1.0",
     "vue-slick-carousel": "^1.0.6"
