@@ -1,5 +1,5 @@
 <template>
-  <section class="warehouse_section">
+  <section class="warehouse_section" data-aos="fade-up">
     <div class="container py-5">
       <swiper
         :centered-slides-bounds="true"

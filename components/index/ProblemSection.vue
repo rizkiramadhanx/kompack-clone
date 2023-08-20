@@ -1,5 +1,5 @@
 <template>
-  <section class="container mt-5">
+  <section class="container mt-5" data-aos="fade-up">
     <div>
       <div>
         <h2 class="text-center">Apakah kamu mengalami masalah ini?</h2>

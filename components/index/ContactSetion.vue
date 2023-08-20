@@ -1,5 +1,8 @@
 <template>
   <section
+    data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000"
     class="container contact_section text-center py-5 d-flex flex-column align-items-center gap-3"
   >
     <h2>Percayakan Layanan Pergudangan Bisnismu pada Kompack</h2>

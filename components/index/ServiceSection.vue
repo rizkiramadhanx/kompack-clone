@@ -1,5 +1,5 @@
 <template>
-  <section class="service_section">
+  <section class="service_section" data-aos="fade-up" data-aos-duration="3000">
     <div class="">
       <div class="row container_accordion justify-content-between">
         <div class="col-lg-6">

@@ -1,8 +1,9 @@
 <template>
   <section class="container mt-5">
-    <h2 class="text-center">Mengapa Harus Kompack ?</h2>
+    <h2 data-aos="fade-up" class="text-center">Mengapa Harus Kompack ?</h2>
     <div class="my-5 row justify-content-center gap-5 mx-1">
       <div
+        data-aos="fade-right"
         :class="hoverCard1 && 'card_hover'"
         class="position-relative col-lg-3 cursor-pointer card mx-2 d-flex justify-content-center align-items-center flex-column p-3"
         @mouseover="hoverCard1 = true"
@@ -27,6 +28,7 @@
         </div>
       </div>
       <div
+        data-aos="fade-left"
         :class="hoverCard2 && 'card_hover'"
         class="position-relative col-lg-3 card mx-2 d-flex justify-content-center align-items-center flex-column p-3"
         @mouseover="hoverCard2 = true"
@@ -53,6 +55,7 @@
       </div>
 
       <div
+        data-aos="fade-right"
         :class="hoverCard3 && 'card_hover'"
         class="position-relative card col-lg-3 mx-2 d-flex justify-content-center align-items-center flex-column p-3"
         @mouseover="hoverCard3 = true"

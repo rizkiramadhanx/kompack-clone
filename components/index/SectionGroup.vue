@@ -13,7 +13,11 @@
           />
         </h2>
       </div>
-      <div class="row justify-content-center mt-5">
+      <div
+        class="row justify-content-center mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+      >
         <div
           class="row col-10 pengiriman_banner d-flex py-2 px-4 justify-content-between align-items-center bg-white"
         >
@@ -51,7 +55,7 @@
         </div>
       </div>
       <h2 class="title_frugal text-center mt-5 p-2">Rekomendasi untuk Kamu</h2>
-      <div class="row col-10">
+      <div class="row col-10" data-aos="fade-right" data-aos-duration="1500">
         <div class="mx-2 d-lg-none">
           <button
             class="btn btn-pengiriman"
@@ -86,7 +90,11 @@
       <div class="row justify-content-center">
         <div class="mt-2 p-3 row card-expedition d-lg-none">
           <div class="col-12 row justify-content-center gap-1">
-            <div class="row col-12 justify-content-center gap-1">
+            <div
+              class="row col-12 justify-content-center gap-1"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+            >
               <div
                 class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
               >
@@ -121,7 +129,11 @@
                 />
               </div>
             </div>
-            <div class="row col-12 justify-content-center gap-1">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              class="row col-12 justify-content-center gap-1"
+            >
               <div
                 class="left-item-benefit col-5 py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
               >
@@ -133,7 +145,11 @@
                 {{ halo[activeButton].COD }}
               </div>
             </div>
-            <div class="row col-12 justify-content-center gap-1">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              class="row col-12 justify-content-center gap-1"
+            >
               <div
                 class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
               >
@@ -145,7 +161,11 @@
                 {{ halo[activeButton].Retur }}
               </div>
             </div>
-            <div class="row col-12 justify-content-center gap-1">
+            <div
+              data-aos="zoom-in"
+              data-aos-duration="1500"
+              class="row col-12 justify-content-center gap-1"
+            >
               <div
                 class="col-5 left-item-benefit py-2 d-flex justify-content-center content-mobile bg-white align-items-center"
               >
@@ -162,7 +182,7 @@
         <div
           class="col-10 mt-2 p-3 row card-expedition bg_white d-none d-lg-block"
         >
-          <div class="row col-12">
+          <div class="row col-12" data-aos="zoom-in" data-aos-duration="1500">
             <div
               class="col-3 d-flex benefit_text justify-content-center align-items-center"
             >
@@ -205,7 +225,11 @@
               </div>
             </div>
           </div>
-          <div class="row col-12 w-100">
+          <div
+            class="row col-12 w-100"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div
               class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
             >
@@ -232,7 +256,11 @@
               2.8% (PPN ditanggung Komship)
             </div>
           </div>
-          <div class="row col-12 w-100">
+          <div
+            class="row col-12 w-100"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div
               class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
             >
@@ -259,7 +287,11 @@
               Gratis se-lndonesia*
             </div>
           </div>
-          <div class="row col-12 w-100">
+          <div
+            class="row col-12 w-100"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
             <div
               class="col-3 d-flex p-4 text-center justify-content-center align-items-center"
             >
@@ -290,7 +322,11 @@
       </div>
       <div class="col-10 mt-4">
         <div class="row gy-3 justify-content-between">
-          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
+          <div
+            class="col-12 col-lg-5 card-frugal pt-4 shadow-sm"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/jne.png"
@@ -306,7 +342,11 @@
               <span class="text-orange">hemat</span>nya!
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
+          <div
+            class="col-12 col-lg-5 card-frugal pt-4 shadow-sm"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/box.png"
@@ -322,7 +362,11 @@
               di Indonesia
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
+          <div
+            class="col-12 col-lg-5 card-frugal pt-4 shadow-sm"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/dompet.png"
@@ -338,7 +382,11 @@
               di Indonesia
             </p>
           </div>
-          <div class="col-12 col-lg-5 card-frugal pt-4 shadow-sm">
+          <div
+            class="col-12 col-lg-5 card-frugal pt-4 shadow-sm"
+            data-aos="zoom-in-right"
+            data-aos-duration="1500"
+          >
             <div class="d-flex justify-content-center">
               <img
                 src="~/assets/image/hemat/map.png"

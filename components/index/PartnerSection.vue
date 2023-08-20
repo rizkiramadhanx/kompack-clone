@@ -1,5 +1,5 @@
 <template>
-  <div class="container py-5">
+  <div class="container py-5" data-aos="fade-up">
     <h2 class="text-center mb-4">Alur Partner Kompack</h2>
     <div class="bg-line">
       <swiper

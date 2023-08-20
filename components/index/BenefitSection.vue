@@ -4,7 +4,7 @@
       src="~/assets/image/kelebihan-bg.png"
       class="position-absolute d-none mt-5 d-md-block top-50 start-50 translate-middle"
     />
-    <div class="container">
+    <div class="container" data-aos="zoom-in">
       <h2 class="text-center z-2">Apa kelebihan Kompack?</h2>
       <div class="row justify-content-between align-items-end mt-5 mb-5">
         <div class="col-md-4 d-flex flex-column gap-2 gap-md-5">
@@ -76,7 +76,7 @@
           </div>
         </div>
       </div>
-      <div class="text-white d-lg-none">
+      <div class="text-white d-lg-none" data-aos="zoom-in-up">
         <div class="banner_usekompack row py-3 px-2">
           <h1 class="col-md-6 left_usekompack">
             Pakai Kompack Lebih Hemat dan Terjangkau

@@ -8,9 +8,12 @@
 
 <script setup>
 import AOS from "aos";
-import Vue from "vue";
+import "aos/dist/aos.css";
+import { onMounted } from "@vue/runtime-core";
 
-onMounted(() => AOS.init());
+onMounted(() => {
+  AOS.init({});
+});
 </script>
 
 <style>

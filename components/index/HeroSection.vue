@@ -1,7 +1,12 @@
 <template>
   <section class="hero-container">
     <div class="mt-5 container">
-      <div class="row gx-5 gy-5" data-aos="fade-up">
+      <div
+        class="row gx-5 gy-5"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <div
           class="col-md-6 left-hero d-flex flex-column justify-content-center"
         >
@@ -17,7 +22,13 @@
             Pelajari Lebih Lanjut
           </button>
         </div>
-        <div class="col-md-6">
+        <div
+          class="col-md-6"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
           <Hero class="hero-image img-fluid" />
         </div>
       </div>
